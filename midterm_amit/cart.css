@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #242424;
+    padding: 1rem 2rem;
+}
+
+.navbar .a-btn {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+h1 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.cart-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.cart-item:hover {
+    background-color: #444;
+}
+
+.item-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 1.2rem;
+}
+
+.item-details {
+    flex: 1;
+    color: #fff;
+}
+
+.item-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.item-price,
+.item-quantity {
+    font-size: 1rem;
+    color: #bbb;
+    margin: 0.2rem 0;
+}
+
+.item-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.remove-btn {
+    background-color: #ff4d4d;
+    color: #fff;
+}
+
+.remove-btn:hover {
+    background-color: #ff3333;
+}
+
+.checkout-btn,
+.checkout-all-btn {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.checkout-btn:hover,
+.checkout-all-btn:hover {
+    background-color: #45a049;
+}
+
+.clear-cart-btn {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+.clear-cart-btn:hover {
+    background-color: #e67e22;
+}
+
+.checkout-all {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.empty-cart-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #bbb;
+}
